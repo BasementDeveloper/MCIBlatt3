@@ -63,7 +63,7 @@ function startExp() {
 		
 		console.log("counter: " + counter);
 
-		if(counter == 50){
+		if(counter == 51){
 			window.localStorage.clear;
 			elem.removeEventListener('mousedown',rectangleClicked);
 			elem.style.visibility = 'hidden';
@@ -84,9 +84,15 @@ function startExp() {
 	function placeRectangle() {
 		
 		if(counter < 50){
-			currentBoxWidth = allTargetFigures[counter][0];
-			widths.push(currentBoxWidth);
-			currentBoxHeight = allTargetFigures[counter][1];
+			if(counter == 0 || counter == 1){
+				currentBoxWidth = allTargetFigures[0][0];
+				widths.push(currentBoxWidth);
+				currentBoxHeight = allTargetFigures[0][1];
+			} else {
+				currentBoxWidth = allTargetFigures[counter][0];
+				widths.push(currentBoxWidth);
+				currentBoxHeight = allTargetFigures[counter][1];
+			}
 		}
 
 		elem.style.width = currentBoxWidth + 'px';
