@@ -1,0 +1,173 @@
+body,
+html {
+  font-family: 'Heebo', sans-serif;
+  margin: 0 auto;
+}
+
+.overlay {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  display: none;
+}
+
+.header {
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  list-style: none;
+  height: 65px;
+  background: #000000;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-bar--item {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 60px;
+}
+
+a:hover,
+.--active:hover {
+  color: #c3bbbe;
+  border-bottom: 3px solid #c3bbbe;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.--active {
+  border-bottom: 3px solid #ffffff;
+  left: 16px;
+  right: 16px;
+}
+
+.content {
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+.h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.bodytext {
+  line-height: 24px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.data-table {
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  border: 1px solid black;
+}
+th,td {
+  border: 1px solid black;
+}
+thead {
+  font-weight: 700;
+}
+p{
+  margin-left: 5px;
+}
+
+.btn_start {
+color: #ffffff;
+background-color: #000000;
+padding: 10px;
+width: 150px;
+font-size: 18px;
+outline: none;
+border: none;
+cursor: pointer;
+position: relative;
+transition:0.3s;
+text-transform: uppercase;
+border: 2px solid #000000;
+}
+
+.btn_start:hover {
+color: #000000;
+background-color: #ffffff;
+}
+
+@media all and (orientation: landscape) and (max-width: 768px) {
+  .nav-bar {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav-bar--item {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .content {
+    margin: 5px 5% 5% 5%;
+    display: flex;
+  }
+
+  .text {
+    margin: 10px;
+  }
+
+  .h1 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+
+  }
+
+  .bodytext {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .btn_start {
+    float: right;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    left: 50px;
+    width: 140px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .overlay {
+    display: block;
+    z-index: 10;
+  }
+
+  .overlay-image {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .h2 {
+    text-align: center;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+

@@ -1,0 +1,28 @@
+body{
+	height:100%;
+}
+.wrapper {
+	width: 100%;
+	min-height: 400px;
+	max-height:90%;
+	position: relative;
+}
+.rectangle {
+	width: 100px;
+	height: 50px;
+	position: relative;
+	visibility: hidden;
+	background: red;
+	z-index:1;
+}
+.line {
+	position: absolute;
+	display:none;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);	
+	top:50%;
+	width:100%;
+	height:2px;
+	background-color:black;
+}

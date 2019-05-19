@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,700" rel="stylesheet">
+  <title>Results</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="overlay">
+  <img class="overlay-image" src="img/phone_rotate-512.png" alt="overlay"/>
+  <h2 class="h2">Bitte drehen Sie Ihr Gerät in den Landschafts-Modus, um die Anwendung weiterhin benutzen zu können.</h2>
+</div>
+<div class="header">
+  <ul class="nav-bar">
+    <li class="nav-bar--item"><a href="b1b.html">b1b</a></li>
+    <li class="nav-bar--item"><a href="b1c.html">b1c</a></li>
+    <li class="nav-bar--item"><a class="--active" href="#">ausgaben</a></li>
+  </ul>
+</div>
+<div class="content">
+  <div class="text">
+    <button class="btn_start" id="start" onclick=writetable()>Auswerten</button>
+    <h1 class="h1">
+      Übersicht aller gemessenen Werte:
+    </h1>
+    <p class="bodytext">
+      In dieser Tabelle werden alle Testergebnisse angezeigt.
+    </p>
+  </div>
+ 
+  <h2>Test B1</h2>
+  <table class="data-table" id="arr-to-table">
+     
+    <thead>
+    <tr>
+      <td colspan="1" rowspan="1"><p>Gemessene Zeit in ms</p></td>
+      <td colspan="1" rowspan="1"><p>Distanz in pixel</p></td>
+      <td colspan="1" rowspan="1"><p>Breite in pixel</p></td>
+    </tr>
+    </thead>
+  </table>
+</div>
+</body>
+<script language="javascript" src="js/tableresults.js"></script>
+</html>
