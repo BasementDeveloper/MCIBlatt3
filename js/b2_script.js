@@ -100,9 +100,9 @@ function startExp() {
 		//console.log("Breite: " + currentBoxWidth);
 
 		var min1=0; 
-		var max1=window.innerWidth - 200 - currentBoxWidth;
+		var max1=window.innerWidth  - currentBoxWidth;
 		var min2=0; 
-		var max2=window.innerHeight -200 - currentBoxHeight;
+		var max2=window.innerHeight -218 - currentBoxHeight;
 		var random = 0, random2 = 0;
 		random = Math.random() * (+max1 - +min1) + +min1;
 		random2 = Math.random() * (+max2 - +min2) + +min2;
@@ -114,6 +114,7 @@ function startExp() {
 		}
 		posLeft = random;
 		posTop = random2;
+
 		elem.style.left = posLeft + 'px';
 		elem.style.top = posTop + 'px';
 		console.log("currentBoxHeight: " + currentBoxHeight);
